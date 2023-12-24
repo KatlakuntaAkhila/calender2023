@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            line-height: 10vh;
+            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+            background-color: #0f32f4;
+            z-index: 3;
+
+        }
+        header h1{
+            text-align: center;
+        }
+        body
+        {
+          text-transform:uppercase;
+          background-color: #e8e8e8;
+        }
+        .calender
+        {
+            display: flex;
+            margin: 15vh auto;
+            width:95%;
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap:1rem;
+
+        }
+       .sap-month ul
+       {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        list-style: none;
+       }
+       .sap-month h1{
+        text-align: center;
+        /* padding: 1rem;
+         */
+        
+       }
+       .sap-month
+       {
+       box-shadow: 2px 1px 10px 0 rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        width: 350px;
+        height: 270px;
+       }
+       li{
+        padding: 5px;
+        text-align: center;
+       }
+       .h1{
+        height: 40px;
+        top: 0;
+        text-align: justify;
+        margin: 3px;  
+        background-color: blue;
+        background-color:"blue"
+    }
+    .days
+    {
+       margin-top: 15px;
+    }
+    .days{
+        margin-top: 15px;
+    }
+    .first-day,
+    .first-day~li
+    {
+        opacity: 1 !important;
+        font-weight: 600;
+    }
+    .days
+    {
+        font-weight: 900;
+    }
+    li
+    {
+        padding: 5px;
+        text-align: center;
+    }    
+    
+        li:nth-child(7n),
+        li:nth-child(7n+1)
+        {
+            color: rgb(253, 4, 4);
+        }
+    .special
+    {
+        color: rgb(253, 4, 4);
+        text-decoration: underline;
+    }    
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>2023</h1>
+    </header>
+    <div class="calender">
+
+        <div class="sap-month">
+            <h1 class="h1">january</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="first-day special">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li class="special">13</li>
+                <li class="special">14</li>
+                <li class="special">15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li class="special">26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">february</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li class="special">18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li class="last-day">28</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">march</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li class="special">8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li class="special">22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li class="special">30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">april</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li class="special">7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li class="special">14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li class="special">22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li class="last-day">30</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">may</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month special"></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="special">5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li class="special">14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">june</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li class="special">20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li class="special">29</li>
+                <li class="last-day">30</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">july</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">august</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li class="special">15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li class="special">29</li>
+                <li class="special">30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">september</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li class="special">7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li class="special">19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li class="special">28</li>
+                <li>29</li>
+                <li class="last-day">30</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">october</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="first-day">1</li>
+                <li class="special">2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li class="special">15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li class="special">22</li>
+                <li class="special">23</li>
+                <li class="special">24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">november</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li class="special">10</li>
+                <li>11</li>
+                <li class="special">12</li>
+                <li>13</li>
+                <li class="special">14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li class="special">19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li class="last-day">30</li>
+                
+            </ul>
+        </div>
+        <div class="sap-month">
+            <h1 class="h1">december</h1>
+            <ul class="days">
+                <li>s</li>
+                <li>m</li>
+                <li>t</li>
+                <li>w</li>
+                <li>t</li>
+                <li>f</li>
+                <li>s</li>
+            </ul>
+            <ul class="day">
+                <li class="prev-month"></li>
+                <li></li>
+                <li></li>
+                <li></li>  
+                <li></li>             
+                <li class="first-day">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li class="special">25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li class="last-day">31</li>
+                
+            </ul>
+        </div>
+    </div>
+</main>    
+</body>
+</html>
